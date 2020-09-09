@@ -4,7 +4,7 @@ class corosync::params {
   $authkey_source                      = 'file'
   $authkey                             = '/etc/puppet/ssl/certs/ca.pem'
   $port                                = 5405
-  $bind_address                        = $facts['networking']['ip']
+  $bind_address                        = $facts['ipaddress']
   $force_online                        = false
   $check_standby                       = false
   $log_timestamp                       = false
